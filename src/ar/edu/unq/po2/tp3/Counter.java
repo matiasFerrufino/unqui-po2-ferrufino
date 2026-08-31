@@ -1,7 +1,7 @@
 package ar.edu.unq.po2.tp3;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+
 
 public class Counter {
 	

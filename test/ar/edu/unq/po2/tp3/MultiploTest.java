@@ -39,10 +39,5 @@ class MultiploTest {
 	    
 	}
 	
-	public void pruebaDePrimitivos () {
-		int datoInt ;
-		Integer datoInteger;
-		
-		
-	}
+	
 }
