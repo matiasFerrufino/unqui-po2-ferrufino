@@ -152,16 +152,28 @@ public class Counter {
 	 * 10- devuelve false   */
 	
 	/*Ejercicio 5
-	 * 1- No son objetos creados a partir de una clase, ya vienen predefinidos en el lenguaje,
-	 * en este sentido, no se pueden utilizar metodos sobre ellos como .lenght, guardan valor directamente
-	 * en la memoria en vez de guardar una referencia hacia un objeto.
-	 * 
-	 * 2- int es un tipo de dato primitivo, mientras que Integer no, ya que este ultimo
-	 * cuenta con la utilizacion de metodos para diferentes funcionalidades.
-	 * 
-	 * 3- en las variables de instancias, java asigna valores pretederminados, para int = 0 y para Integer = null
-	 * 
-	 * 4- en las variables de metodos, java no asigna nada y el compilador no deja compilar */
+	  1- No son objetos creados a partir de una clase, ya vienen predefinidos en el lenguaje,
+	  en este sentido, no se pueden utilizar metodos sobre ellos como .lenght, guardan valor directamente
+	  en la memoria en vez de guardar una referencia hacia un objeto.
+	  
+	  2- int es un tipo de dato primitivo, mientras que Integer no, ya que este ultimo
+	  cuenta con la utilizacion de metodos para diferentes funcionalidades.
+	  
+	  3- en las variables de instancias, java asigna valores pretederminados, para int = 0 y para Integer = null
+	  
+	  4- en las variables de metodos, java no asigna nada y el compilador no deja compilar */
+	
+	/*Ejercicio 7
+	  
+	  1- Están organizados en una estructura de carpetas anidadas dentro del directorio fuente (src), 
+	  donde cada punto en el nombre del paquete representa un nivel de subcarpeta (por ejemplo, 
+	  la carpeta model contiene adentro a la carpeta gui).
+	  
+	  2- Sí, los nombres de los paquetes coinciden exactamente con la estructura de directorios en 
+		 el sistema de archivos tanto para los archivos fuente (.java) como 
+		 para los compilados (.class), guardando ambos en rutas paralelas según su paquete.
+	  
+	    */
 	
 	
 	
