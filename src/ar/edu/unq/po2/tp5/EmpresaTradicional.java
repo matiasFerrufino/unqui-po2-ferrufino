@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp4;
+package ar.edu.unq.po2.tp5;
 
 public class EmpresaTradicional extends Producto {
 	public EmpresaTradicional (double unPrecio) {

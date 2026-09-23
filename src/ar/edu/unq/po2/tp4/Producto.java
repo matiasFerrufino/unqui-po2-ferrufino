@@ -1,15 +1,35 @@
 package ar.edu.unq.po2.tp4;
 
 public abstract class Producto {
-	private double precio;
+	private String nombre;
+	protected double precio;
+	private boolean precioCuidado;
 	
-	public Producto (double unPrecio) {
-		precio = unPrecio;
+	
+	public Producto (String unNombre, double unPrecio) {
+		nombre = unNombre;
+		precio = unPrecio; 
+		precioCuidado = false;
 	}
 	
-	public abstract double precio ();
-	
-	public double getPrecioBase () {
-		return precio;
+	public Producto (String unNombre, double unPrecio, boolean unBooleano) {
+		nombre = unNombre;
+		precio = unPrecio; 
+		precioCuidado = unBooleano;
 	}
+	
+	public abstract double getPrecio();
+	
+	public String getNombre () {
+		return nombre;
+	}
+	
+	public boolean esPrecioCuidado() {
+		return precioCuidado;
+	}
+	
+	
+
 }
+
+

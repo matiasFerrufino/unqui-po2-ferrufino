@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.superMercado;
+package ar.edu.unq.po2.tp4;
 
 public class Producto1EraNecesidad extends Producto {
 	private double descuento;

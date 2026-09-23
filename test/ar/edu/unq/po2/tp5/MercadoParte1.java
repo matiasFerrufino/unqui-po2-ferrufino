@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp4;
+package ar.edu.unq.po2.tp5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,6 +8,12 @@ import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp5.Caja;
+import ar.edu.unq.po2.tp5.Cooperativa;
+import ar.edu.unq.po2.tp5.EmpresaTradicional;
+import ar.edu.unq.po2.tp5.Mercado;
+import ar.edu.unq.po2.tp5.Producto;
 
 class MercadoParte1 {
 	Mercado mercadoCentral;

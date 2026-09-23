@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.superMercado;
+package ar.edu.unq.po2.tp4;
 
 public class ProductoNormal extends Producto {
 	

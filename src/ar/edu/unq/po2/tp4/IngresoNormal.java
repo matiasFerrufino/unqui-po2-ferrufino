@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.impuestos;
+package ar.edu.unq.po2.tp4;
 
 public class IngresoNormal extends Ingreso {
 	 
