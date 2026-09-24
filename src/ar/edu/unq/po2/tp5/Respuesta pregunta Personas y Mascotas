@@ -1,0 +1,9 @@
+4. No wollok hace automaticamente la lo de conseguir nombre independientemente de que se trate
+si de una persona o de una masctoa, esto debido a que es un lenguaje dinamico y no requiere de una 
+interfaz como intermediario para hacer una lista de nombres, se le llama interfaz.
+
+5. Sí, mediante herencia podría crear una superclase común (por ejemplo, Nombrable) que tenga el método getName(), 
+y hacer que ambas clases hereden de ella.   Sin embargo, si Persona ya hereda de otra clase que no puedo modificar, 
+esto no funcionaría porque Java no permite la herencia múltiple.   
+Por lo tanto, la manera de asegurar el polimorfismo en Java para este caso es utilizando una Interfaz. 
+Crearía una interfaz con la firma del método getName() y haría que tanto Persona como Mascota implementen esa interfaz. 

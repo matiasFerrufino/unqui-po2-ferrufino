@@ -1,0 +1,13 @@
+Si reemplazamos XXX, YYY, ZZZ y WWW por las interfaces que vimos, la justificación sería esta:
+
+* Para XXX usaría List: Adentro del método se hace collection.get(0). Como necesitamos acceder a una posición exacta mediante un índice, sí o sí tiene que ser una colección que mantenga un orden, como las listas.
+
+* Para YYY usaría Collection: El método solo hace collection.add(element). Como la acción de agregar elementos la soportan casi todas las colecciones, conviene usar la interfaz más genérica posible para que el método acepte más tipos de datos.
+
+* Para ZZZ usaría List: El código hace collection.subList(x,y). Para poder extraer una porción basándonos en posiciones de inicio y fin, necesitamos estrictamente una colección ordenada (un Set, por ejemplo, no nos serviría).
+
+* Para WWW usaría Collection: El método solo usa collection.contains(element). Para preguntar si un elemento está guardado adentro, nos sirve cualquier colección básica.
+
+¿Qué ocurriría si usamos estas interfaces?
+Lo que pasaría es que nuestro código gana mucho polimorfismo y flexibilidad. A los métodos que piden Collection les vamos a poder pasar un ArrayList, un LinkedList o un HashSet indistintamente y van a funcionar perfecto. 
+Al mismo tiempo, restringimos de forma segura los métodos que sí o sí necesitan orden (los que piden List), evitando que alguien les pase una colección sin índices y haga fallar el programa.
