@@ -28,5 +28,11 @@ public class Banco {
 			solicitudesAprobadas.add(unaSolicitud);
 		}
 	}
+	
+	public double montoTotalADesembolsar() {
+		return solicitudesAprobadas.stream().
+			   mapToDouble(s -> s.montoSolicitado()).
+			   sum();
+	}
 
 }
