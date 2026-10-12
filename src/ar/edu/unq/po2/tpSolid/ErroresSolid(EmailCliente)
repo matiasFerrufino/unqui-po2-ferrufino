@@ -1,0 +1,15 @@
+Principios solid que se rompen en el modelo presentado
+
+- Single responsability: La clase ClienteEmail esta sobrecargada con trabajo que no deberia
+realizar.
+
+- Open/Closed: Para la agregacion de por ejemplo un apartado de spam en ClienteEmail se deberia de modificar cada 
+uno de los metodos de ClienteEmail lo cual romperia completamente el principio de Abierto/Cerrado.
+
+-Interface Segregation: La interfaz IServidor tiene protocolos que no todos los servidores van a implementar por 
+lo que el ServidorPOP al implementar esa interfaz se ve obligado a dejar los metodos obligatorios en vacio
+lo cual rompe por completo este principio.
+
+- Dependency inversion: En la clase ClienteEmail, en el atributo servidor, esta puedo como que ese servidor
+puede ser exclusivamente de tipo ServidorPOP, lo cual rompe este principio, ya que se esta obligando una
+a ClienteEmail de depender unicamente de un solo servidor.
